@@ -10,8 +10,9 @@ elif action == '-':
 elif action == '*':
     result = number_1 * number_2
 elif action == '/':
-    result = number_1 / number_2
+    if number_2 != 0:
+        result = number_1 / number_2
 else:
-    result = "Invalid action selected"
-
+    result = "Invalid action selected(division by zero)"
+result = "Invalid action selected"
 print("Result:", result)
